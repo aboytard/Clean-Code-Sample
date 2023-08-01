@@ -7,4 +7,10 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DependencyInjection\" />
+    <Folder Include="DependencyInversion\" />
+    <Folder Include="SingletonPattern\" />
+  </ItemGroup>
+
 </Project>
