@@ -1,5 +1,6 @@
 ﻿namespace Clean_Code_Sample.IOC
 {
+    // Inversion of Control
     public class IOC
     {
         public static void Main(String[] args)
