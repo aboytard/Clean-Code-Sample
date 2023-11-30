@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeSnippets xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+	<CodeSnippet Format="1.0.0">
+		<Header>
+			<Title>Dispose Pattern</Title>
+			<Author>Myself</Author>
+			<Description>Implement the basic of dispose pattern</Description>
+		</Header>
+		<Snippet>
+			<Code Language="CSharp">
+				<![CDATA[
+					private bool disposed = false;
+					
+				    public void Dispose()
+                        {
+                            Dispose(true);
+                            GC.SuppressFinalize(this);
+                        }
+						
+                        protected virtual void Dispose(bool disposing)
+                        {
+                            if (!disposed)
+                            {
+                                if (disposing)
+                                {
+                                    // Dispose managed resources.
+                                }
+
+                                // Dispose unmanaged resources.
+                                disposed = true;
+                            }
+                        }
+				]]>
+			</Code>
+		</Snippet>
+	</CodeSnippet>
+</CodeSnippets>
