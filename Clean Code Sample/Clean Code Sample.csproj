@@ -8,6 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="Concurrency\Reader-Writer\" />
+    <Folder Include="Concurrency\Producer-Consumer\" />
     <Folder Include="DependencyInjection\" />
     <Folder Include="DependencyInversion\" />
     <Folder Include="SingletonPattern\" />
